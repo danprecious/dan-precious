@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaArrowUpFromBracket, FaGithub } from "react-icons/fa6";
 import { StaggeredOnViewText } from "../utilities/StaggeredText";
-import { grotesque } from "@/app/layout";
+import { grotesque } from "@/app/utils/font";
 import Image from "next/image";
 
 const MoreProjects = () => {

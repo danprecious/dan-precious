@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import {
   Geist,
   Geist_Mono,
-  Courier_Prime,
-  Happy_Monkey,
-  Bricolage_Grotesque,
+
 } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/base/header";
 import Footer from "./_components/base/footer";
+import { grotesque } from "./utils/font";
 
 // import localFont from 'next/font/local'
 
@@ -26,16 +25,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-export const happyMonkey = Happy_Monkey({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-bricolage-grotesque",
-});
-export const grotesque = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: ["400", "700", "800"],
 });
 
 const metadata: Metadata = {

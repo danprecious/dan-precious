@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion, useScroll, useTransform } from "motion/react";
 import { projects } from "@/app/utils/constants";
-import { grotesque } from "@/app/layout";
+import { grotesque } from "@/app/utils/font";
 import { StaggeredOnViewText } from "../utilities/StaggeredText";
 import Image from "next/image";
 import Link from "next/link";

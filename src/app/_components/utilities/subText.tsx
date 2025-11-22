@@ -5,17 +5,21 @@ import localFont from "next/font/local";
 export const myFont = localFont({
   src: "../../../../public/fonts/GeistMono-VariableFont_wght.ttf",
   variable: "--font-myFont",
+  
 });
 
 
 export const codeText = Courier_Prime({
   variable: "--",
-  weight: ["400", "700"]
+  weight: ["400", "700"],
+  subsets: ['latin']
+
 });
 
 export const codeText2 = Coda({
   variable: "--font-coda-mono",
-  weight: ["400", "800"]
+  weight: ["400", "800"],
+  subsets: ['latin']
 });
 
 const SubText: React.FC<{styles: string, text: string}> = ({styles, text}) => {

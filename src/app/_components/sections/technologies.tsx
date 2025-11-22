@@ -1,8 +1,8 @@
-import { grotesque } from "@/app/layout";
+import { grotesque } from "@/app/utils/font";
 import React from "react";
 import { FaNodeJs } from "react-icons/fa6";
 import { GrReactjs } from "react-icons/gr";
-import { RiNextjsFill, RiNextjsLine } from "react-icons/ri";
+import { RiNextjsLine } from "react-icons/ri";
 import {
   SiCloudinary,
   SiExpress,

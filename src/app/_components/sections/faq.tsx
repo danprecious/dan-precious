@@ -1,6 +1,6 @@
 "use client";
 
-import { grotesque } from "@/app/layout";
+import { grotesque } from "@/app/utils/font";
 import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { StaggeredOnViewText } from "../utilities/StaggeredText";

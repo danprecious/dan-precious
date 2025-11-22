@@ -1,6 +1,6 @@
 import React from "react";
 import SubText from "../utilities/subText";
-import { grotesque } from "@/app/layout";
+import { grotesque } from "@/app/utils/font";
 import { StaggeredOnViewText } from "../utilities/StaggeredText";
 import Image from "next/image";
 

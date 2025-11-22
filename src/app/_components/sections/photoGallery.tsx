@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import SubText from "../utilities/subText";
-import { grotesque } from "@/app/layout";
+import { grotesque } from "@/app/utils/font";
 import { StaggeredOnViewText } from "../utilities/StaggeredText";
 
 const PhotoGallery = () => {

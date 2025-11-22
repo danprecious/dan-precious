@@ -1,10 +1,8 @@
 "use client";
 
-import { FaLocationDot } from "react-icons/fa6";
 import SubText, { myFont } from "../utilities/subText";
 import { useState } from "react";
-import { grotesque } from "@/app/layout";
-import AnimatedGrid from "./animatedGrid";
+import { grotesque } from "@/app/utils/font";
 import AnimatedLine from "./animatedLine";
 import StaggeredText from "../utilities/StaggeredText";
 
