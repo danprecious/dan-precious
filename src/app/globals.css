@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+* {
+  /* @apply border; */
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  /* --foreground: #ffd105; */
+  /* --foreground: oklch(90.5% 0.182 98.111); */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
+
+body {
+  background-color: var(--background);
+  background-image: repeating-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px,
+    transparent 100%
+  );
+  background-size: 4px 3px;
+  animation: grain 1s steps(2) ease-in-out infinite; 
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@keyframes grain {
+  0% {
+background-size: 4px 3px;
+  }
+  100% {
+    background-size: 50px 50px;
+  }
+}
+
+
+/* Add this to your global CSS */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.flex-r-center {
+  @apply flex justify-center items-center;
+}
+.flex-c-center {
+  @apply flex justify-center flex-col items-center;
+}
+
+.border {
+  @apply border-[1px] border-solid border-foreground/5;
+}
+
+.section-base {
+  @apply h-full w-full min-h-[90vh] lg:px-28 px-3 my-20 flex flex-col items-center
+}
+
+.text-gradient-b {
+  @apply text-transparent  bg-gradient-to-b from-0% from-foreground to-80% to-foreground/50 bg-clip-text
+}
+
+.text-gradient-r {
+  @apply text-transparent bg-gradient-to-r from-0% from-foreground to-80% to-foreground/20 bg-clip-text
+}
+
+.text-gradient-br {
+  @apply text-transparent  bg-gradient-to-br from-0% from-foreground to-80% to-foreground/20 bg-clip-text
+}
+
+
+.horizontal-section {
+  /* width: 100vw; */
+  height: 120vh; 
+  overflow: hidden; /* Hide vertical scroll */
+}
+
+.horizontal-content {
+  display: flex; /* Flex or inline-block for horizontal layout */
+  width: fit-content; /* Let content expand */
+  height: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 80%;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.connectForm input {
+  @apply w-full  outline-0 py-2 px-2  rounded-lg;
+
+}
